@@ -1,0 +1,4 @@
+{
+  "setup-worktree-unix": "set -e; if ! command -v uv >/dev/null 2>&1; then echo 'uv is not installed. Install from https://docs.astral.sh/uv/'; exit 1; fi; uv sync",
+  "setup-worktree-windows": "where uv >nul 2>nul || (echo uv is not installed. Install from https://docs.astral.sh/uv/ & exit /b 1) && uv sync"
+}

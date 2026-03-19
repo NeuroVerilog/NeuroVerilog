@@ -25,5 +25,9 @@ NeuroVerilog is a **ready-to-use agent for engineers to write Verilog code**. Th
 
 - **Language**: Use **English** for code, comments, commit messages, and docs unless the user asks otherwise.
 - **Code**: Prefer clear names, minimal coupling, and tests for non-trivial logic (RAG, MAS, API).
+- **Python env/deps**: Use `uv` (not `pip`) for dependency and environment management.
+  - Run `uv sync` to install/update from `pyproject.toml` + `uv.lock`.
+  - Prefer `uv run <command>` for Python commands, tests, and scripts.
+  - Commit `uv.lock` when dependencies change.
 
 If you’re unsure about scope or design, ask the user before making large changes.

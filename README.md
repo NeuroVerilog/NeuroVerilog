@@ -14,3 +14,14 @@ First part (until the end of May):
 
 Second part:
 - [ ] Improve the existing solution?
+
+## Quick Start
+### Prerequisites
+- Python 3.12
+- `uv` installed (https://docs.astral.sh/uv/)
+### Setup
+```bash
+uv venv
+source .venv/bin/activate
+uv sync
+```
